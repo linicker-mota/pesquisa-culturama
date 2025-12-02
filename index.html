@@ -121,45 +121,73 @@
           <input type="color" name="userFavoriteColor" id="favoriteColor" />
         </fieldset>
 
-        <label for="state">Estado:</label>
-        <select id="state" name="userState">
-          <option value="acre">Acre</option>
-          <option value="alagoas">Alagoas</option>
-          <option value="amapa">Amapá</option>
-          <option value="amazonas">Amazonas</option>
-          <option value="bahia">Bahia</option>
-          <option value="ceara">Ceará</option>
-          <option value="distritoFederal">Distrito Federal</option>
-          <option value="espiritoSanto">Espirito Santo</option>
-          <option value="goiás">Goiás</option>
-          <option value="maranhão">Maranhão</option>
-          <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
-          <option value="matoGrosso">Mato Grosso</option>
-          <option value="minasGerais">Minas Gerais</option>
-          <option value="para">Pará</option>
-          <option value="paraiba">Paraíba</option>
-          <option value="parana">Paraná</option>
-          <option value="pernambuco">Pernambuco</option>
-          <option value="piauí">Piauí</option>
-          <option value="rioDeJaneiro">Rio de Janeiro</option>
-          <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
-          <option value="rioGrandeDoSul">Rio Grande do Sul</option>
-          <option value="rondonia">Rondônia</option>
-          <option value="roraima">Roraima</option>
-          <option value="santaCatarina">Santa Catarina</option>
-          <option value="sãoPaulo">São Paulo</option>
-          <option value="sergipe">Sergipe</option>
-          <option value="tocantins">Tocantins</option>
-        </select>
+        <fieldset>
+          <legend>Moradia</legend>
+          <label for="state">Estado:</label>
+          <select id="state" name="userState">
+            <option value="acre">Acre</option>
+            <option value="alagoas">Alagoas</option>
+            <option value="amapa">Amapá</option>
+            <option value="amazonas">Amazonas</option>
+            <option value="bahia">Bahia</option>
+            <option value="ceara">Ceará</option>
+            <option value="distritoFederal">Distrito Federal</option>
+            <option value="espiritoSanto">Espirito Santo</option>
+            <option value="goiás">Goiás</option>
+            <option value="maranhão">Maranhão</option>
+            <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+            <option value="matoGrosso">Mato Grosso</option>
+            <option value="minasGerais">Minas Gerais</option>
+            <option value="para">Pará</option>
+            <option value="paraiba">Paraíba</option>
+            <option value="parana">Paraná</option>
+            <option value="pernambuco">Pernambuco</option>
+            <option value="piauí">Piauí</option>
+            <option value="rioDeJaneiro">Rio de Janeiro</option>
+            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+            <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+            <option value="rondonia">Rondônia</option>
+            <option value="roraima">Roraima</option>
+            <option value="santaCatarina">Santa Catarina</option>
+            <option value="sãoPaulo">São Paulo</option>
+            <option value="sergipe">Sergipe</option>
+            <option value="tocantins">Tocantins</option>
+          </select>
 
-        <label for="city">Cidade:</label>
-        <input
-          type="text"
-          name="userCity"
-          id="city"
-          autocomplete="address-level2"
-          placeholder="São Paulo"
-        />
+          <label for="city">Cidade:</label>
+          <input
+            type="text"
+            name="userCity"
+            id="city"
+            autocomplete="address-level2"
+            placeholder="São Paulo"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Satisfação</legend>
+          <p>O que você acha da qualidade do nosso serviço?</p>
+
+          <input type="radio" name="userSatisfaction" id="veryGood" />
+          <label for="veryGood">Muito bom</label>
+          <br />
+          <input type="radio" name="userSatisfaction" id="good" />
+          <label for="good">Bom</label>
+          <br />
+          <input type="radio" name="userSatisfaction" id="medium" />
+          <label for="medium">Mediano</label>
+          <br />
+          <input type="radio" name="userSatisfaction" id="bad" />
+          <label for="bad">Ruim</label>
+          <br />
+
+          <label for="feedback">Opinião:</label>
+          <textarea
+            name="userFeedback"
+            id="feedback"
+            placeholder="Deixe aqui sua opnião..."
+          ></textarea>
+        </fieldset>
 
         <button type="submit">Enviar</button>
       </form>
